@@ -1,0 +1,30 @@
+.footer {
+	/*height: 60px;*/
+	position: fixed;
+	bottom: 0;
+	z-index: 1;
+	inline-size: 100%;
+	max-inline-size: 1360px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: .5rem;
+	background-color: #FFF;
+	padding-block: 1.5rem;
+	
+	& span:first-of-type {
+		font-size: 1.5rem;
+	}
+	
+	@media screen and (min-width: 768px) {
+		flex-direction: row;
+		justify-content: center;
+	}
+	
+	& a {
+		color: #f14d4d;
+		font-weight: 700;
+		text-transform: uppercase;
+	}
+}
